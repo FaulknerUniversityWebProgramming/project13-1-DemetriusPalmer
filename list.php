@@ -1,6 +1,6 @@
 <?php
 include 'travel-data.inc.php';
-
+include 'TravelPhoto.class.php';
 
 
 
@@ -61,7 +61,7 @@ include 'travel-data.inc.php';
          
          			<li>
                 <a href="detail.php?id=22" class="img-responsive">
-				<img src="images/square/6114850721.jpg" alt="View of Cologne">
+				<?php ?><img src="images/square/6114850721.jpg" alt="View of Cologne">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">

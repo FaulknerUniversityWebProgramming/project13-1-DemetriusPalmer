@@ -10,9 +10,21 @@ class TravelPhoto{
 	
 	public static $photoID;
 	
-	function _construct($fileName, $title, $description, $latitude, $longitude){
-		return _toString(). "<img">.$fileName."<alt>".$description."<title>".$title."</img>";
-	}
+	function _construct($fileName, $title, $description, $latitude, $longitude){};
+	function _toString(){
+		
+		return parent:: _toString()."<li> <a href='detail.php?id=7' class='img-responsive'>".
+		"<img src=".$fileName. "alt=".$description">".
+			"<div class='caption'>
+			<div class='blur'></div>
+				<div class='caption-text'>
+					<h1>Lunenburg Port</h1>
+				</div>
+			</div>
+            </a>
+		</li>";
+	} 
+	
 }
 
 ?>
